@@ -1,13 +1,17 @@
 /* resets */
 img{
     width: 100%;
+    color: white;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* color: white; */
 }
+
+
 
 /* layout */
 
@@ -15,13 +19,21 @@ img{
     width: 600px;
     margin: auto;
     display: flex;
+    padding: 1rem;
     flex-direction: column;
     align-items: center;
     background: rgb(60,77,93);
-    background: linear-gradient(90deg, rgba(60,77,93,1) 0%, rgba(10,13,15,1) 61%);
+    background: linear-gradient(180deg, rgba(204,215,225,1) 50%, rgba(60,77,93,1) 94%);
 }
 
 .header-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.current-date-written{
     display: flex;
     justify-content: space-between;
 }
@@ -46,7 +58,18 @@ img{
     border-top: solid white 1px;
 }
 
+.header-bar .icon-wrapper{
+    width: 2rem;
+}
+
 /* style */
+
+.header-bar, .today{
+    color: #3c4d5d;
+}
+.week{
+    color: white;
+}
 
 .day{
     margin-inline: 3rem;
